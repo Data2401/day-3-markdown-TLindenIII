@@ -1,10 +1,11 @@
 ---
 title: 'RMarkdown:  In Class Assignment'
-author: "YOUR NAME HERE"
-date: "Data 2401"
-output: html_document
+author: "Thomas Linden"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE) ## this line makes all the code show! 
@@ -12,26 +13,53 @@ knitr::opts_chunk$set(echo = TRUE) ## this line makes all the code show!
   ## Everything above this is R code that we need to make the file run! We'll discuss it next class.
 ```
 
-
-Reminder: We learned how to do these things in class today, but there is a "Markdown Help" page available in RStudio (and lots of help if you google). 
-
+Reminder: We learned how to do these things in class today, but there is a "Markdown Help" page available in RStudio (and lots of help if you google).
 
 # In-class Activity, Markdown
 
-**Do not skip reading this line** Create a new section at the end of this file with the title "Your work here", and beneath it, do the following 3 things. To turn this in, make sure you've committed and pushed, and turn in the link to this repository to the assignment on Blackboard.  
+**Do not skip reading this line** Create a new section at the end of this file with the title "Your work here", and beneath it, do the following 3 things. To turn this in, make sure you've committed and pushed, and turn in the link to this repository to the assignment on Blackboard.
 
-1. Make a subsection called Wise words. Put your favorite quote in a block quote. Add a functioning link to a website that provides more information about that quote.
+1.  Make a subsection called Wise words. Put your favorite quote in a block quote. Add a functioning link to a website that provides more information about that quote.
 
-2. Make a subsection called My semester. Make a three column table of the current courses you are taking, with separate columns for course number (put those in __bold__), course title (put those in _italics_), and instructor name.
+2.  Make a subsection called My semester. Make a three column table of the current courses you are taking, with separate columns for course number (put those in **bold**), course title (put those in *italics*), and instructor name.
 
-3. Lastly, make subsection called "I recommend", and add some information about your favorite author or musician.
+3.  Lastly, make subsection called "I recommend", and add some information about your favorite author or musician.
 
-- A _subsubheading_ with the name of the artist or author;    
-- An example of their writing or lyrics (formatted in a *block of text*);   
-- A _list_ of things they have written or performed (remember to use the formatting markup for a list!).     
+-   A *subsubheading* with the name of the artist or author;\
+-   An example of their writing or lyrics (formatted in a *block of text*);\
+-   A *list* of things they have written or performed (remember to use the formatting markup for a list!).
 
-
-Note that you can click "Knit" as you go along to see what the final results are going to look like. The knitting will produce an html file, which you will also need to stage/commit/push once it exists! 
+Note that you can click "Knit" as you go along to see what the final results are going to look like. The knitting will produce an html file, which you will also need to stage/commit/push once it exists!
 
 **Once you're done, remember to commit the changes and push the repo back to your assignment on GitHub!**
- 
+------------------------------------------------------------------------
+
+::: {style="text-align: center;"}
+# Your work here
+:::
+
+## Wise Words
+
+> "I don’t like ’em putting chemicals in the water that turn the freakin’ frogs gay!” – [Alex Jones (Frog Scientist)](https://read.dukeupress.edu/environmental-humanities/article/14/3/661/319761/Theorizing-the-Gay-Frog#:~:text=%E2%80%9CI%20don%E2%80%99t%20like%20%E2%80%99em%20putting%20chemicals%20in%20the%20water%20that%20turn%20the%20freakin%E2%80%99%20frogs%20gay!%E2%80%9D)
+
+## My Semester
+
+::: {style="margin-left: auto;             margin-right: auto;             width: 90%"}
+| **Course \#** | **Course Title** | **Instructor Name** |
+|----|----|----|
+| CS 1411 | Intro to CS with Python | Kulwant Singh |
+| MATH 2305 | Discrete Mathematical Structures | Youn-Sha Chan |
+| MATH 2422 | Linear ALgebra & Multivariable Calculus | Edwin Tecarro |
+| DATA2401 | Data Science I | Katherine Ann Shoemaker |
+| MATH 3302 | Probability and Statistics | J Patrick King |
+:::
+
+## I Recommend
+
+### George R.R. Martin
+
+> "A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.” - George R.R. Martin, A Dance with Dragons
+
+-   A Game of Thrones
+-   The Winds of Winter
+-   Fire & Blood
